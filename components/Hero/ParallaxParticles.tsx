@@ -24,11 +24,9 @@ const ParallaxParticles = () => {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        // background: {
-        //   color: {
-        //     value: "#0d47a1",
-        //   },
-        // },
+        background: {
+          position: "fixed",
+        },
         fpsLimit: 120,
         interactivity: {
           events: {
@@ -48,7 +46,7 @@ const ParallaxParticles = () => {
             },
             repulse: {
               distance: 150,
-              duration: 0.3,
+              duration: 0.9,
             },
           },
         },
@@ -70,7 +68,7 @@ const ParallaxParticles = () => {
               default: "bounce",
             },
             random: false,
-            speed: 6,
+            speed: 4,
             straight: false,
           },
           number: {
